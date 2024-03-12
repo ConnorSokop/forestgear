@@ -19,7 +19,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
+
 .logoimage {
     max-width: 200px; 
     padding: 1em; 
@@ -173,6 +175,30 @@ footer p {
     font-weight: 600;
 }
 
+#mobilemenu {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .slicknav_menu {
+        background-color: transparent;
+    }
+    .slick_nav a {
+        text-shadow: 3px 3px 10px salmon;
+    }
+}
+
+
+
 
 @media (max-width: 600px) {
     header {
@@ -235,3 +261,4 @@ footer p {
         bottom: 10px;
     }
 }
+
